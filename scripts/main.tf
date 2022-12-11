@@ -2,11 +2,10 @@
 locals {
   services = [
     "servicecontrol.googleapis.com",
-    "containerregistry.googleapis.com",
+    "artifactregistry.googleapis.com",
     "iam.googleapis.com",
     "iamcredentials.googleapis.com",
     "servicemanagement.googleapis.com",
-    "storage-api.googleapis.com",
   ]
 }
 
