@@ -19,10 +19,21 @@ brew install terraform
 gcloud auth application-default login
 ```
 
-- Verify scripts/variables.tf and apply scripts
+- Verify scripts/variables.tf in registry folder and apply scripts
 
 ```
-cd scripts
+cd dataflow_registry
+terraform init
+terraform apply
+```
+
+- Build and push your first images to this repo then deploy Cloud Run jobs (WIP)
+<!> Google Cloud run job is not yet available in Terraform, should be available in a few weeks
+
+https://github.com/hashicorp/terraform-provider-google/issues/13194
+
+```
+cd dataflow_jobs
 terraform init
 terraform apply
 ```
