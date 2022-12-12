@@ -2,13 +2,11 @@
 locals {
   services = [
     "cloudscheduler.googleapis.com",
-    "run.googleapis.com"
+    "run.googleapis.com",
+    "firestore.googleapis.com",
+    "secretmanager.googleapis.com"
   ]
 }
-
-# Data source to access GCP project metadata
-data "google_project" "project" {}
-
 
 resource "google_project_service" "default" {
   for_each = toset(local.services)

@@ -19,10 +19,10 @@ brew install terraform
 gcloud auth application-default login
 ```
 
-- Verify scripts/variables.tf in registry folder and apply scripts
+- Verify dataflow_github_actions/variables.tf in registry folder and apply scripts
 
 ```
-cd dataflow_registry
+cd dataflow_github_actions
 terraform init
 terraform apply
 ```
@@ -33,7 +33,7 @@ terraform apply
 https://github.com/hashicorp/terraform-provider-google/issues/13194
 
 ```
-cd dataflow_jobs
+cd dataflow_cloud_run
 terraform init
 terraform apply
 ```

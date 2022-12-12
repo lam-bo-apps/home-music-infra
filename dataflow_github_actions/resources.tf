@@ -13,7 +13,7 @@ resource "google_artifact_registry_repository" "dataflow" {
 # Service account to be used for federated auth to connect to GCR
 resource "google_service_account" "dataflow_github_actions" {
   account_id   = "dataflow-github-actions-user"
-  display_name = "Service Account impersonated in GitHub Actions for dataflow project"
+  display_name = "Dataflow service account impersonated in GitHub Actions"
 }
 
 # Role binding to allow publisher to publish images

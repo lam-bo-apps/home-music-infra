@@ -11,3 +11,9 @@ variable "region" {
   description = "The default region used for resources created"
   default     = "us-central1"
 }
+
+variable "firestore_location" {
+  type        = string
+  description = "The location used for firestore database"
+  default     = "us-central"
+}
